@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1776182273523928222.html"
 	],
 	prefix: "",
 	theme: {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				orbitron: ['Orbitron', 'sans-serif'],
+				rajdhani: ['Rajdhani', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -70,25 +75,33 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'particle-float': {
+					'0%': { transform: 'translateY(0) rotate(0deg)', opacity: '0.6' },
+					'100%': { transform: 'translateY(-100vh) rotate(360deg)', opacity: '0' }
+				},
+				'blink': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' }
+				},
+				'glitch-color': {
+					'0%, 100%': { textShadow: '0 0 10px #00f5ff, 0 0 30px #00f5ff' },
+					'25%': { textShadow: '-2px 0 #ff00ff, 2px 0 #00f5ff, 0 0 30px #00f5ff' },
+					'75%': { textShadow: '2px 0 #ff00ff, -2px 0 #00f5ff, 0 0 30px #00f5ff' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'particle-float': 'particle-float linear infinite',
+				'blink': 'blink 1s step-end infinite',
+				'glitch-color': 'glitch-color 4s infinite'
 			}
 		}
 	},
