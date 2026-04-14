@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Icon from '@/components/ui/icon';
 
-const HERO_IMAGE = 'https://cdn.poehali.dev/projects/e7c9b153-1b01-431f-aaa5-911d917ce7e4/files/e74185ff-1b6a-4cba-a5d0-d92dbebcc7f1.jpg';
+const HERO_IMAGE = 'https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif';
 
 const TOP_GAMES = [
   { rank: 1, title: 'Dota 2', genre: 'MOBA', score: 98, players: '12.4M', trend: '+5%', color: '#00f5ff' },
@@ -137,14 +137,11 @@ export default function Index() {
       {/* HERO */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scanlines">
         <div className="absolute inset-0 cyber-grid" style={{ opacity: 0.6 }} />
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url(${HERO_IMAGE})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            opacity: 0.2,
-          }}
+        <img
+          src={HERO_IMAGE}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ opacity: 0.25 }}
         />
         <div
           className="absolute inset-0"
