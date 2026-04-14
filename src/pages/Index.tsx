@@ -7,11 +7,6 @@ const TOP_GAMES = [
   { rank: 1, title: 'Dota 2', genre: 'MOBA', score: 98, players: '12.4M', trend: '+5%', color: '#00f5ff' },
   { rank: 2, title: 'Counter-Strike 2', genre: 'FPS', score: 97, players: '11.1M', trend: '+2%', color: '#00f5ff' },
   { rank: 3, title: 'League of Legends', genre: 'MOBA', score: 95, players: '9.8M', trend: '-1%', color: '#ff00ff' },
-  { rank: 4, title: 'Valorant', genre: 'FPS', score: 93, players: '8.2M', trend: '+8%', color: '#00f5ff' },
-  { rank: 5, title: 'Apex Legends', genre: 'Battle Royale', score: 91, players: '6.5M', trend: '+3%', color: '#00ff88' },
-  { rank: 6, title: 'Fortnite', genre: 'Battle Royale', score: 89, players: '5.9M', trend: '+12%', color: '#00ff88' },
-  { rank: 7, title: 'Overwatch 2', genre: 'FPS', score: 86, players: '4.7M', trend: '-3%', color: '#ff00ff' },
-  { rank: 8, title: 'StarCraft II', genre: 'RTS', score: 84, players: '2.1M', trend: '0%', color: '#ff9900' },
 ];
 
 const TOURNAMENTS = [
